@@ -3,7 +3,7 @@ import './signup.css';
 function Signup(){
     return(
         <div>
-            <h1 style={{color:"black", marginBottom: '120px'}}>fromis_A</h1>
+            <h1 style={{color:"black", marginBottom: '120px'}}>Linea</h1>
             <div className="container"> 
                 <label>아이디</label>
                 <input type="text" placeholder="아이디를 입력하세요" style={{ marginBottom: '30px' }} />
