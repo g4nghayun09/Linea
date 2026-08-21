@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 function Login(){
     return(
-        <div>
-            <h3 style={{color:"black", marginBottom: '30px'}}>fromis_A</h3  >
+        <div style={{marginTop: '40px'}}>
+            <p style={{color:"black", marginBottom: '30px', fontSize: '32px', fontWeight: 'bold', letterSpacing: '5px'}}>Linea</p>
             <div className="container"> 
                 <label>아이디</label>
                 <input type="text" placeholder="아이디를 입력하세요" style={{ marginBottom: '15px' }} />
