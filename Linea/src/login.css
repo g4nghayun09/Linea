@@ -38,8 +38,19 @@ body {
     border: none;
     border-radius: 10px;
     background-color: #5B8DEF;
-    color: black;
+    color: white;
     font-size: 14px;
     cursor: pointer;
 }
 
+
+a {
+    text-decoration: none;
+    color:#5B8DEF ;
+}
+a:visited {
+    color: #5B8DEF;
+}
+a:hover {
+    text-decoration: none;
+}
