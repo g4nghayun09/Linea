@@ -1,0 +1,56 @@
+
+body {
+    background-color: white;
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.container label,
+.container input {
+    width: 300px;
+    color: black;
+}
+
+.container label {
+    text-align: left;
+}
+
+.container input {
+      width: 300px;
+    height: 38px;
+    padding: 0 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: white;
+}
+
+.container button {
+    width: 300px;
+    height: 38px;
+    border: none;
+    border-radius: 10px;
+    background-color: #5B8DEF;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+a {
+    text-decoration: none;
+    color:#5B8DEF ;
+}
+a:visited {
+    color: #5B8DEF;
+}
+a:hover {
+    text-decoration: none;
+}
