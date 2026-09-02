@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './settlemen.css';
 
 function Settlement() {
@@ -22,21 +23,15 @@ function pay(event) {
 
         
         <div>
-            <a
-                href=""
-                style={{
-                    color: 'black',
+            <Link to="/promiseMain" className="a" style={{
+                        color: 'black',
                     marginBottom: '20px',
                     display: 'flex',
                     alignItems: 'start',
                     fontSize: '23px'
-                }}
-            >
-                ← 정산 추가
-            </a>
-
-            <div className="container">
-
+                    }}> ← 뒤로가기</Link>
+            <div className="container" >
+                    <div style={{marginBottom: '50px'}}></div>
                 <label>지출내용</label>
                 <input
                     type="text"
