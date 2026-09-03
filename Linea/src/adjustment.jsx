@@ -1,5 +1,6 @@
 import "./adjustment.css";
 
+
 function Adjustment() {
     return (
         <div className="container">

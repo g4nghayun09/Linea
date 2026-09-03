@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './settlemen.css';
 
 function Settlement() {
@@ -22,21 +23,15 @@ function pay(event) {
 
         
         <div>
-            <a
-                href=""
-                style={{
-                    color: 'black',
+            <Link to="/promiseMain" className="a" style={{
+                        color: 'black',
                     marginBottom: '20px',
                     display: 'flex',
                     alignItems: 'start',
                     fontSize: '23px'
-                }}
-            >
-                ← 정산 추가
-            </a>
-
-            <div className="container">
-
+                    }}> ← 뒤로가기</Link>
+            <div className="container" >
+                    <div style={{marginBottom: '50px'}}></div>
                 <label>지출내용</label>
                 <input
                     type="text"
@@ -74,15 +69,32 @@ function pay(event) {
             <span style={{ color: 'black' }}>{name}</span>
         </div>
     ))}
+</div>  
+            <h3 style={{ color : '#5B8DEF', marginTop : '20px',  marginBottom: '20px'   }}>1인당 금액 {Nmoney}원</h3>
+<div style={{ display: 'flex' }}>
+    <button style={{
+        width: 230,
+        height: 45,
+        background: '#F3F3F3',
+        color: 'black',
+        borderRadius: '10px',
+        boxShadow: 'none'
+    }}>
+        취소
+    </button>
+
+    <button style={{
+        width: 230,
+        height: 45,
+        background: '#5B8DEF',
+        borderRadius: '10px',
+        marginLeft: '10px',
+        boxShadow: 'none'
+    }}>
+        추가
+    </button>
 </div>
-            <h3 style={{ color : '#5B8DEF'}}>1인당 금액 {Nmoney}원</h3>
             </div>
-            <button style={{width : 230, height : 45, background : '#F3F3F3', color : 'black',borderRadius: '10px',boxShadow: 'none'}}>
-                취소
-            </button>
-            <button style={{width : 230, height : 45, background : '#5B8DEF',borderRadius: '10px', marginLeft : '10px',boxShadow: 'none'}}>
-                추가
-            </button>
         </div>
     );
 }
