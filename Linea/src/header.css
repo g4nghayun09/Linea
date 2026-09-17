@@ -1,0 +1,87 @@
+:root {
+    --text: #ffffff;
+    --point: #5B8DEF;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--text);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 25px;
+}
+
+.navigation_part {
+    display: flex;
+    gap: 123px;
+}
+
+.login_part {
+    display: flex;
+    gap: 20px;
+}
+
+a,
+a:visited,
+a:active {
+    color: #000;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.navigation_part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation_part img {
+  width: 25px;
+  height: auto;
+}
+
+.navigation_part a {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+  text-decoration: none;
+}
+
+.part1:hover a{
+    color: var(--point);
+}
+
+.part1:hover img{
+    filter: invert(52%) sepia(58%) saturate(2284%) hue-rotate(196deg) brightness(98%) contrast(94%);
+}
+
+.part2:hover a{
+    color: var(--point);
+}
+
+.part2:hover img{
+    filter: invert(52%) sepia(58%) saturate(2284%) hue-rotate(196deg) brightness(98%) contrast(94%);
+}
+
+.part3:hover a{
+    color: var(--point);
+}
+
+.part3:hover img{
+    filter: invert(52%) sepia(58%) saturate(2284%) hue-rotate(196deg) brightness(98%) contrast(94%);
+}
+
+.login:hover {
+    color: var(--point);
+}
+
+.signup:hover{
+    color:var(--point);
+}
