@@ -1,0 +1,120 @@
+.rc-card {
+    background: #F5F7FC;
+    border: 2px solid #5B8DEF;
+    border-radius: 10px;
+    padding: 20px 24px;
+    width: 100%;
+    max-width: 420px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.rc-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 16px;
+}
+
+.rc-label {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    white-space: nowrap;
+}
+
+.rc-nav {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    line-height: 1;
+    padding: 4px 8px;
+}
+
+/* 7열 고정. minmax(0, 1fr)로 컨테이너가 좁아져도 넘치지 않음 */
+.rc-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 10px 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* 날짜는 칸 위쪽, 점은 그 아래 */
+.rc-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    height: 46px;
+    min-width: 0;
+    padding: 6px 0 0;
+    border: none;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.rc-date {
+    font-size: 16px;
+    color: #222;
+    line-height: 1;
+}
+
+/* 앞뒤 빈칸: 연한 '00' */
+.rc-cell--empty {
+    cursor: default;
+}
+.rc-cell--empty .rc-date {
+    color: #E4E6EB;
+}
+
+/* 빨간날: 일요일 + 공휴일 */
+.rc-cell--red .rc-date {
+    color: #E5484D;
+}
+
+.rc-cell--highlight {
+    background: #FEF3D9;
+}
+
+/* 오늘 날짜: 파란 글씨 */
+.rc-cell--today .rc-date {
+    font-weight: 700;
+    color: #5B8DEF;
+}
+
+.rc-cell--selected {
+    background: #5B8DEF;
+}
+.rc-cell--selected .rc-date {
+    color: #fff;
+}
+
+.rc-dots {
+    display: flex;
+    gap: 3px;
+    min-height: 6px;
+}
+
+.rc-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+@media (max-width: 360px) {
+    .rc-card {
+        padding: 12px;
+    }
+    .rc-grid {
+        gap: 6px 4px;
+    }
+}
