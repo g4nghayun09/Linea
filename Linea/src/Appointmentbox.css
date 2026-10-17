@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  color: #222;
+  font-family: sans-serif;
+}
+
+.appointment-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #d3e0fb 0%, #ffffff 100%);
+}
+
+.container {
+  width: 85%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/* ---------------- 필터 ---------------- */
+
+.filter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0 24px;
+  font-size: 18px;
+}
+
+.filter > span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  background: transparent;
+  color: #222;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.filter button.active {
+  color: #5b8def;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #5b8def;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ---------------- 약속 카드 ---------------- */
+
+.appointments ul {
+  list-style: none;
+}
+
+.appointments li {
+  margin-bottom: 18px;
+}
+
+.appointment-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 26px 30px;
+
+  border: none;
+  border-radius: 10px;
+  background: #f6f7fb;
+  cursor: pointer;
+}
+
+.appointments li.open .appointment-header {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.appointment-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+}
+
+.appointment-info {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.people {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.appointment-info svg {
+  width: 24px;
+  height: 24px;
+}
+
+.appointment-body {
+  padding: 28px 30px;
+  background: white;
+  border: 1px solid #cecece;
+  border-top: none;
+  font-size: 19px;
+  line-height: 2;
+}
+
+.appointment-body p {
+  color: #222;
+}
+
+.appointment-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.appointment-actions button {
+  width: 70px;
+  height: 34px;
+  border: none;
+  background: #5b8def;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.detail-link {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 16px;
+  color: #5b8def;
+  text-decoration: none;
+}
+
+.empty {
+  padding: 60px 0;
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+}
